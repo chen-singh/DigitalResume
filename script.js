@@ -34,3 +34,19 @@ function drawStars() {
 }
 
 drawStars();
+
+function openModal() {
+  document.getElementById("courseModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("courseModal").style.display = "none";
+}
+
+// Close modal when clicking outside
+window.onclick = function (event) {
+  const modal = document.getElementById("courseModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
