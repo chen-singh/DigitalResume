@@ -15,9 +15,10 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+        <li><a href="#service">Services</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
       <li><a href="#resume">Resume</a></li>
+       <li><a href="#contact">Contact</a></li>
 
     </ul>
   </nav>
@@ -87,6 +88,7 @@
     Beginner to advanced Core Java training covering OOP concepts, data types,
     exception handling, collections, multithreading, JDBC, and hands-on practice.
   </p>
+      <button class="btn" onclick="openModal()">View Course Details</button>
 </div>
     
 <div class="service-card">
@@ -217,6 +219,35 @@
   </section>
 
   <script src="script.js"></script>
+
+  <!-- Course Modal -->
+<div id="courseModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>Core Java Course</h2>
+
+    <h3>⏳ Course Duration</h3>
+    <p>6–8 Weeks (Flexible for Students & Working Professionals)</p>
+
+    <h3>📘 Syllabus</h3>
+    <ul>
+      <li>Introduction to Java & JVM</li>
+      <li>Data Types, Variables & Operators</li>
+      <li>Control Statements</li>
+      <li>OOP Concepts (Class, Object, Inheritance, Polymorphism)</li>
+      <li>Exception Handling</li>
+      <li>Collections Framework</li>
+      <li>Multithreading</li>
+      <li>File Handling</li>
+      <li>JDBC & Database Connectivity</li>
+      <li>Mini Project</li>
+    </ul>
+
+    <p class="note">✔ Includes hands-on coding, assignments & interview questions</p>
+  </div>
+</div>
+
 </body>
 </html>
 
