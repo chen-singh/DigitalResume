@@ -287,3 +287,70 @@ canvas {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 229, 255, 0.3);
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background: #111;
+  color: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+.modal-content h3 {
+  margin-top: 15px;
+  color: #ffd54f;
+}
+
+.modal-content ul {
+  margin-left: 20px;
+}
+
+.modal-content li {
+  margin: 6px 0;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #a5d6a7;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
